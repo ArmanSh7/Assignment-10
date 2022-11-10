@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Vecta Corp.</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="text/html" href="/resources/demos/style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <link
+      rel="stylesheet"
+      href="./scroll-top-custom-icon-animation/src/jquery.back-to-top.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <style>
+      li {
+        display: block;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scroll-top-custom-icon-animation/src/jquery.back-to-top.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./Simple-jQuery-Sticky-Fixed-Position-Plugin-fixto/dist/fixto.min.js"></script>
+    <script src="./js/commonEffects.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="js/jquery.mobilemenu.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("ul li a").on("click", () => {
+          $("#sticky").fixTo("body");
+        });
+        $("#accordion").accordion({
+          collapsible: true,
+        });
+        $(".bck").backToTop({
+          iconName: "fas fa-chevron-up",
+          trigger: 70,
+        });
+
+        $("#responsive-menu").mobileMenu();
+      });
+    </script>
+  </head>
+  <body>
+    <main class="container">
+      <figure class="three columns">
+        <img src="images/logo.gif" class="scale-with-grid" alt="" />
+      </figure>
+
+      <nav class="thirteen columns">
+        <ul id="responsive-menu">
+          <li><a href="index.html" title="Home page">Home</a></li>
+          <li>
+            <a href="aboutus.html" title="Learn more about us">About Us</a>
+          </li>
+          <li>
+            <a
+              href="solutions.html"
+              title="Vecta Corp. offers 3 solutions for prospecting,
+				 converting, and retaining customers."
+              >Solutions</a
+            >
+          </li>
+          <li>
+            <a href="support.html" title="Find the latest technical resources!"
+              >Support</a
+            >
+          </li>
+          <li><a href="contactus.html" title="Contact us!">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <header class="sixteen columns">
+        <img src="images/header.gif" class="scale-with-grid" alt="" />
+      </header>
+
+      <section id="welcome" class="eleven columns">
+        <h4 id="vProspect">Our Solutions</h4>
+        <h3>vProspect 2.0</h3>
+        <div>
+          <p>
+            Define and research your target audience, define your strategy to
+            reach that audience and present a strong and memorable brand to that
+            audience.<br />
+            vProspect can help your business: Define your target audience and
+            competition. Research your competition and your target audience's
+            behavior, needs, technical know-how level, etc.<br />
+            Establish a conceptual and visual identity that corresponds to the
+            defined direction of the company.<br />
+            Ensure consistency across all media.<br />
+            Establish corporate guidelines for cohesiveness of any future
+            developments.<br />
+            Define and/or re-defining your service and/or product offerings.
+            Define expansion plans and strategies.<br />
+            Implement Search Engine Optimization of all Online materials.
+          </p>
+
+          <p></p>
+        </div>
+        <h5><a href="#top">Back to top</a></h5>
+        <br id="vConvert" />
+        <h3>vConvert 2.0</h3>
+        <div>
+          <p>
+            Create a highly user-friendly and easy-to-navigate information
+            architecture that will help your prospects interact with the company
+            on a highly interactive level. <br />vConvert can help your
+            business: Build a visual and functional user front end that focuses
+            exclusively on providing an exceptional user experience while
+            conveying company, service and product information.<br />
+            Cause the desired emotional response in a user to facilitate
+            conversion to a client. <br />Build sites that move beyond merely
+            conveying information. <br />They advertise, motivate, excite and
+            inspire.<br />
+            Users are more likely to remember and recommend your site. Research
+            your target audience's behavior, needs, technical know-how and
+            level, etc.<br />
+            Develop any applicable back-end programs to facilitate user
+            interaction with the company and offerings on a highly functional
+            level to allow any kind of online transactions and a completely
+            centralized information collection and access point, accessible from
+            any location.<br />
+            Create an architecture to display the site content and information
+            in a logical and easy to access manner.<br />
+            Facilitating thereby the desired ease, for the user to find what
+            they are looking for quickly and easily.<br />
+            Allowing the user to focus on the subject at hand rather than
+            searching for information on the site.
+          </p>
+
+          <h5><a href="#top">Back to top</a></h5>
+        </div>
+        <br id="vRetain" />
+        <h3>vRetain 1.0</h3>
+        <div>
+          <p>
+            Build on existing customer relationships to improve productivity and
+            maximize customer loyalty, while growing revenues. <br />vRetain can
+            help your business: Streamline existing business infrastructures by
+            utilizing technology for automation, information centralization, and
+            information sharing among all business units and departments, as
+            well as efficient prospect & customer tracking and interaction
+            within the company. <br />Collect crucial information, data and
+            statistics that allow a company to keep in touch with users in a
+            very customized, highly targeted way.<br />
+            Analyze site visitor behavior through traffic analysis, usability
+            studies and interactive polling.<br />
+            Recommending and making site and application adjustments to improve
+            usability and user experience.
+          </p>
+        </div>
+
+        <h5><a href="#top">Back to top</a></h5>
+      </section>
+
+      <section id="sticky" id="testimonials" class="five columns">
+        <h4>Quick Nav</h4>
+
+        <!-- INSERT ACCORDION HERE -->
+        <div id="accordion"></div>
+
+        <ul>
+          <li><a href="#vProspect">vProspect</a></li>
+          <li><a href="#vConvert">vConvert</a></li>
+          <li><a href="#vRetain">vRetain</a></li>
+        </ul>
+
+        <p>
+          <a href="#" class="bck"></a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
